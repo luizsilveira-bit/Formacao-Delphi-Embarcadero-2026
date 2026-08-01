@@ -1,0 +1,44 @@
+package DBDatePicker;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  DesignIDE,
+  vcl,
+  dbrtl,
+  vclwinx,
+  vcldb;
+
+contains
+  uPackage.DB.DataPicker in '..\Source\uPackage.DB.DataPicker.pas',
+  uPackage.DB.DataPicker.Register in '..\Source\uPackage.DB.DataPicker.Register.pas',
+  uPackage.DB.DataPicker.Propertys.Editor in '..\Source\uPackage.DB.DataPicker.Propertys.Editor.pas',
+  uPackage.DB.DataPicker.Sobre in '..\Source\uPackage.DB.DataPicker.Sobre.pas' {FrAbout};
+
+end.
