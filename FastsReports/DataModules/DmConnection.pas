@@ -167,7 +167,7 @@ end;
 procedure TDmConn.ShowReport(ADesignMode: Boolean = False);
 begin
   //if not DmConn.GetRelatorio('CLIENTES_POR_EMPRESA', DmConn.Report) then
-  //Report.LoadFromFile('C:\Projects\SrPolezi\Formacao-Delphi-Embarcadero-2026\FastsReports\Reports\Example.fr3');
+  //Report.LoadFromFile('C:\Projects\SrPolezi\Formacao-Delphi-Embarcadero-2026\FastsReports\Reports\Aula_01\Example.fr3');
 
   Report.Variables['TITULO_VINDO_DELPHI'] := QuotedStr('MEU TITULO é TAL'); //Precisar ter variavel dentro do relatorio;
 
@@ -181,12 +181,12 @@ procedure TDmConn.GerarPDF;
 begin
   var CaminhoRelatorio: string := ExpandFileName(
     ExtractFilePath(ParamStr(0)) +
-    '..\..\Reports\EnderecosClientesEmpresas_2.fr3'
+    '..\..\Reports\Aula_01\EnderecosClientesEmpresas_2.fr3'
   );
 
   var CaminhoPDF := ExpandFileName(
     ExtractFilePath(ParamStr(0)) +
-    '..\..\Reports\EnderecosClientesEmpresas.pdf'
+    '..\..\Reports\Aula_01\EnderecosClientesEmpresas.pdf'
   );
 
   if not FileExists(CaminhoRelatorio) then
