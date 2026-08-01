@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/06/28 11:36:38.000.432,=emsserverapi.dcp</Transaction>
+    <Transaction>2025/06/28 11:36:38.000.551,=C:\Users\lpole\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/06/28 11:40:39.000.275,=C:\Users\lpole\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/06/28 11:40:39.000.264,=emsserverapi.dcp</Transaction>
+    <Transaction>2025/07/05 11:41:01.000.733,=C:\Users\lpole\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/07/26 09:22:16.000.634,=C:\Users\lpole\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/10/24 18:58:10.000.038,=C:\Users\lpole\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/11/25 13:40:10.000.608,=C:\Users\lpole\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/12/12 13:49:50.000.756,=C:\Users\lpole\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/04/25 08:24:55.000.317,=C:\Users\lpole\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/07/31 21:51:04.000.089,=C:\Users\lpole\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/08/01 08:27:27.000.770,=C:\Users\lpole\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/08/01 09:09:05.834,=C:\Users\lpole\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/08/01 09:10:05.993,C:\Projects\SrPolezi\Formacao-Delphi-Embarcadero-2026\FastsReports\VIew.Main.dfm=C:\Users\lpole\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2026/08/01 09:10:05.993,C:\Projects\SrPolezi\Formacao-Delphi-Embarcadero-2026\FastsReports\VIew.Main.pas=C:\Users\lpole\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/08/01 09:10:12.708,C:\Projects\SrPolezi\Formacao-Delphi-Embarcadero-2026\FastsReports\FastsReports.dproj=C:\Users\lpole\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2026/08/01 09:16:40.700,=C:\Projects\SrPolezi\Formacao-Delphi-Embarcadero-2026\FastsReports\Unit1.pas</Transaction>
+    <Transaction>2026/08/01 09:19:48.540,C:\Projects\SrPolezi\Formacao-Delphi-Embarcadero-2026\FastsReports\DataModules\DmConnection.pas=C:\Projects\SrPolezi\Formacao-Delphi-Embarcadero-2026\FastsReports\Unit1.pas</Transaction>
+    <Transaction>2026/08/01 09:19:48.540,C:\Projects\SrPolezi\Formacao-Delphi-Embarcadero-2026\FastsReports\DataModules\DmConnection.dfm=C:\Projects\SrPolezi\Formacao-Delphi-Embarcadero-2026\FastsReports\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
