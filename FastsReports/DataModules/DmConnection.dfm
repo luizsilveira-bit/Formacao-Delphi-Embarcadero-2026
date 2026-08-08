@@ -127,14 +127,17 @@ object DmConn: TDmConn
           Frame.Typ = []
           Shape = skRoundRectangle
         end
-        object TfcxpMemo1: TfcxpMemoView
+        object Memo8: TfrxMemoView
+          IndexTag = 1
           AllowVectorExport = True
           Left = 258.897806980000000000
-          Top = 11.897649960000000000
+          Top = 11.338590000000000000
           Width = 529.134200730000000000
-          Height = 34.015771670000000000
+          Height = 30.236240000000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
           ContentScaleOptions.Constraints.MinIterationValue = 0
+          DataSet = frxDBResumoGeral
+          DataSetName = 'ResumoGeral'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -27
@@ -145,17 +148,18 @@ object DmConn: TDmConn
           Memo.UTF8W = (
             'DOSS'#205#202' ANAL'#205'TICO DA LIGA POK'#201'MON')
           ParentFont = False
-          GradientColor = clBlack
-          Highlights = ''
         end
-        object TfcxpMemo2: TfcxpMemoView
+        object Memo9: TfrxMemoView
+          IndexTag = 1
           AllowVectorExport = True
           Left = 258.897806980000000000
-          Top = 49.354360000000000000
+          Top = 45.354360000000000000
           Width = 529.134200730000000000
-          Height = 22.677181670000000000
+          Height = 22.677180000000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
           ContentScaleOptions.Constraints.MinIterationValue = 0
+          DataSet = frxDBResumoGeral
+          DataSetName = 'ResumoGeral'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -19
@@ -166,8 +170,6 @@ object DmConn: TDmConn
           Memo.UTF8W = (
             'An'#225'lise geral dos l'#237'deres, equipes, tipos e n'#237'veis')
           ParentFont = False
-          GradientColor = clBlack
-          Highlights = ''
         end
       end
       object MasterDataDashboard: TfrxMasterData
@@ -233,111 +235,6 @@ object DmConn: TDmConn
           Frame.Typ = []
           Shape = skRoundRectangle
         end
-        object TfcxpMemo3: TfcxpMemoView
-          AllowVectorExport = True
-          Left = 100.157546160000000000
-          Top = 18.897650000000000000
-          Width = 102.047310730000000000
-          Height = 22.677181670000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            'L'#237'deres')
-          ParentFont = False
-          GradientColor = clBlack
-          Highlights = ''
-        end
-        object TfcxpMemo4: TfcxpMemoView
-          AllowVectorExport = True
-          Left = 289.134048810000000000
-          Top = 15.118120000000000000
-          Width = 102.047310730000000000
-          Height = 22.677181670000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            'Pok'#233'mons')
-          ParentFont = False
-          GradientColor = clBlack
-          Highlights = ''
-        end
-        object TfcxpMemo5: TfcxpMemoView
-          AllowVectorExport = True
-          Left = 478.110548820000000000
-          Top = 18.897650000000000000
-          Width = 102.047310730000000000
-          Height = 22.677181670000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            'M'#233'dia N'#237'vel')
-          ParentFont = False
-          GradientColor = clBlack
-          Highlights = ''
-        end
-        object TfcxpMemo6: TfcxpMemoView
-          AllowVectorExport = True
-          Left = 667.087048820000000000
-          Top = 18.897650000000000000
-          Width = 102.047310730000000000
-          Height = 22.677181670000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            'Maior N'#237'vel')
-          ParentFont = False
-          GradientColor = clBlack
-          Highlights = ''
-        end
-        object TfcxpMemo7: TfcxpMemoView
-          AllowVectorExport = True
-          Left = 856.063548820000000000
-          Top = 18.897650000000000000
-          Width = 102.047310730000000000
-          Height = 22.677181670000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            'Menor N'#237'vel')
-          ParentFont = False
-          GradientColor = clBlack
-          Highlights = ''
-        end
         object MemoResumoGeralQTDE_LIDERES: TfrxMemoView
           IndexTag = 1
           AllowVectorExport = True
@@ -370,7 +267,7 @@ object DmConn: TDmConn
           Height = 56.692950000000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
           ContentScaleOptions.Constraints.MinIterationValue = 0
-          DataField = 'MENOR_NIVEL'
+          DataField = 'QTDE_POKEMONS'
           DataSet = frxDBResumoGeral
           DataSetName = 'ResumoGeral'
           Font.Charset = DEFAULT_CHARSET
@@ -381,7 +278,7 @@ object DmConn: TDmConn
           Frame.Typ = []
           HAlign = haCenter
           Memo.UTF8W = (
-            '[ResumoGeral."MENOR_NIVEL"]')
+            '[ResumoGeral."QTDE_POKEMONS"]')
           ParentFont = False
         end
         object Memo3: TfrxMemoView
@@ -567,6 +464,116 @@ object DmConn: TDmConn
               YSource = 'GraficoTipos."QUANTIDADE"'
             end>
         end
+        object Memo10: TfrxMemoView
+          IndexTag = 1
+          AllowVectorExport = True
+          Left = 107.716606160000000000
+          Top = 15.118120000000000000
+          Width = 86.929190730000000000
+          Height = 22.677180000000000000
+          ContentScaleOptions.Constraints.MaxIterationValue = 0
+          ContentScaleOptions.Constraints.MinIterationValue = 0
+          DataSet = frxDBResumoGeral
+          DataSetName = 'ResumoGeral'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = []
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'L'#237'deres')
+          ParentFont = False
+        end
+        object Memo11: TfrxMemoView
+          IndexTag = 1
+          AllowVectorExport = True
+          Left = 296.693108810000000000
+          Top = 15.118120000000000000
+          Width = 86.929190730000000000
+          Height = 22.677180000000000000
+          ContentScaleOptions.Constraints.MaxIterationValue = 0
+          ContentScaleOptions.Constraints.MinIterationValue = 0
+          DataSet = frxDBResumoGeral
+          DataSetName = 'ResumoGeral'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = []
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Pokemons')
+          ParentFont = False
+        end
+        object Memo12: TfrxMemoView
+          IndexTag = 1
+          AllowVectorExport = True
+          Left = 483.779843815000000000
+          Top = 15.118120000000000000
+          Width = 90.708720730000000000
+          Height = 22.677180000000000000
+          ContentScaleOptions.Constraints.MaxIterationValue = 0
+          ContentScaleOptions.Constraints.MinIterationValue = 0
+          DataSet = frxDBResumoGeral
+          DataSetName = 'ResumoGeral'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = []
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'M'#233'dia N'#237'vel')
+          ParentFont = False
+        end
+        object Memo13: TfrxMemoView
+          IndexTag = 1
+          AllowVectorExport = True
+          Left = 668.976813810000000000
+          Top = 15.118120000000000000
+          Width = 98.267780730000000000
+          Height = 22.677180000000000000
+          ContentScaleOptions.Constraints.MaxIterationValue = 0
+          ContentScaleOptions.Constraints.MinIterationValue = 0
+          DataSet = frxDBResumoGeral
+          DataSetName = 'ResumoGeral'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = []
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Maior N'#237'vel')
+          ParentFont = False
+        end
+        object Memo14: TfrxMemoView
+          IndexTag = 1
+          AllowVectorExport = True
+          Left = 859.843078815000000000
+          Top = 15.118120000000000000
+          Width = 94.488250730000000000
+          Height = 22.677180000000000000
+          ContentScaleOptions.Constraints.MaxIterationValue = 0
+          ContentScaleOptions.Constraints.MinIterationValue = 0
+          DataSet = frxDBResumoGeral
+          DataSetName = 'ResumoGeral'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = []
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Menor N'#237'vel')
+          ParentFont = False
+        end
       end
       object PageFooterDashboard: TfrxPageFooter
         FillType = ftBrush
@@ -578,9 +585,20 @@ object DmConn: TDmConn
         Height = 22.677180000000000000
         Top = 695.433520000000000000
         Width = 1046.929810000000000000
+        object Shape7: TfrxShapeView
+          AllowVectorExport = True
+          Left = 7.559058160000000000
+          Top = -3.779530000000000000
+          Width = 1031.811698360000000000
+          Height = 22.677181670000000000
+          Fill.BackColor = 15790320
+          Frame.Color = 14671839
+          Frame.Typ = []
+          Shape = skRoundRectangle
+        end
         object Memo1: TfrxMemoView
           AllowVectorExport = True
-          Left = 967.559680000000000000
+          Left = 959.780150000000000000
           Width = 75.590600000000000000
           Height = 18.897650000000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
@@ -602,7 +620,7 @@ object DmConn: TDmConn
           Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = []
           HAlign = haCenter
           Memo.UTF8W = (
@@ -611,7 +629,7 @@ object DmConn: TDmConn
         end
         object Memo7: TfrxMemoView
           AllowVectorExport = True
-          Left = 7.559060000000000000
+          Left = 10.559060000000000000
           Width = 75.590600000000000000
           Height = 18.897650000000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
