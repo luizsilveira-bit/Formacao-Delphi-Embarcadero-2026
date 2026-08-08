@@ -60,6 +60,9 @@ var
 
 implementation
 
+uses
+  frxChart;
+
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
 {$R *.dfm}

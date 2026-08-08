@@ -45,9 +45,10 @@ object DmConn: TDmConn
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 46242.408066956000000000
-    ReportOptions.LastChange = 46242.479393020830000000
+    ReportOptions.LastChange = 46242.479393020800000000
     ScriptLanguage = 'PascalScript'
     StoreInDFM = False
+    OnStartReport = 'ReportOnStartReport'
     Left = 512
     Top = 8
   end
