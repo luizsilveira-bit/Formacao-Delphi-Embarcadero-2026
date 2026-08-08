@@ -42,7 +42,7 @@ end;
 
 procedure TFrMain.btnPDFClick(Sender: TObject);
 begin
-  DmConn.GerarPDF;
+  DmConn.GerarCSV;
 end;
 
 procedure TFrMain.btnSalvarClick(Sender: TObject);

@@ -1,0 +1,246 @@
+FastReport - Unregistered version (only 5 pages);;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;DOSSÍÊ ANALÍTICO DA LIGA POKÉMON;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;Análise geral dos líderes, equipes, tipos e níveis;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;Líderes;;;;;Pokemons;;;;;;Média Nível;;;;;;;Maior Nível;;;;;Menor Nível;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;8;;;;;32;;;;;;27,41;;;;;;;46;;;;;14;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;Emitido em08/08/2026às 17:43:09;;;;;;;;;;;;;;;Formação Embarcadero - Fasts Reports;;;;;;;;;;;;;;;;;;;;Página 1 de 17;;;;;
+FastReport - Unregistered version (only 5 pages);;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;DETALHAMENTO DAS EQUIPES;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;Líderes, Pokémons, golpes e locais relacionados;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;1º Líder: Roxanne;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Rustboro | Ginásio de Rustboro;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Insígnia da Pedra | Especialidade: Pedra;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Pokemon: Geodude - Nível: 14;;;;;;;;;Nível Inicial;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Tipos: Pedra / Terrestre;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Golpes;;;;;;;;;;;;;Tipos;;Precisão;;;Categoria;;;PP;;Poder;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Rock Throw;;;;;;;;;;;Pedra;90;;Físico;;15;15
+
+Rock Tomb;;;;;;;;;;;Pedra;95;;Físico;;15;15
+
+Harden;;;;;;;;;;;Normal;;;Status;;30;30
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Locais Relacionados;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Rota 116 - Rustboro - Área rochosa;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Pokemon: Nosepass - Nível: 15;;;;;;;;;Nível Inicial;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Tipos: Pedra;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Golpes;;;;;;;;;;;;;Tipos;;Precisão;;;Categoria;;;PP;;Poder;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Rock Throw;;;;;;;;;;;Pedra;90;;Físico;;15;15
+
+Rock Tomb;;;;;;;;;;;Pedra;95;;Físico;;15;15
+
+Harden;;;;;;;;;;;Normal;;;Status;;30;30
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Locais Relacionados;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Rustboro - Ginásio de Rustboro;;
+
+Rota 116 - Rustboro - Área rochosa;;;
+FastReport - Unregistered version (only 5 pages);;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;DETALHAMENTO DAS EQUIPES;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;Líderes, Pokémons, golpes e locais relacionados;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;
+;Pokemon: Aron - Nível: 16;;;;;;;;Nível Inicial;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;Tipos: Aço / Pedra;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;
+;Golpes;;;;;;;;;;;Tipos;;Precisão;;;Categoria;;;PP;;Poder;
+;;;;;;;;;;;;;;;;;;;;;;;
+
+Swift;;;;;;;;;Normal;;;Especial;;20;20
+
+Metal Claw;;;;;;;;;Aço;95;;Físico;;35;35
+
+Iron Defense;;;;;;;;;Aço;;;Status;;15;15
+
+;;;;;;;;;;;;;;;;;;;;;;;
+;Locais Relacionados;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+
+Rota 116 - Rustboro - Área rochosa;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;
+;Pokemon: Lileep - Nível: 17;;;;;;;;Nível Inicial;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;Tipos: Pedra / Planta;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;
+;Golpes;;;;;;;;;;;Tipos;;Precisão;;;Categoria;;;PP;;Poder;
+;;;;;;;;;;;;;;;;;;;;;;;
+
+Rock Throw;;;;;;;;;Pedra;90;;Físico;;15;15
+
+Rock Tomb;;;;;;;;;Pedra;95;;Físico;;15;15
+
+Harden;;;;;;;;;Normal;;;Status;;30;30
+
+;;;;;;;;;;;;;;;;;;;;;;;
+;Locais Relacionados;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+
+Rustboro - Ginásio de Rustboro;;
+
+Rota 116 - Rustboro - Área rochosa;;;
+FastReport - Unregistered version (only 5 pages);;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;DETALHAMENTO DAS EQUIPES;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;Líderes, Pokémons, golpes e locais relacionados;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;2º Líder: Brawly;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Dewford | Ginásio de Dewford;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Insígnia do Punho | Especialidade: Lutador;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Pokemon: Machop - Nível: 16;;;;;;;;;Nível Inicial;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Tipos: Lutador;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Golpes;;;;;;;;;;;;;Tipos;;Precisão;;;Categoria;;;PP;;Poder;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Arm Thrust;;;;;;;;;;;Lutador;100;;Físico;;20;20
+
+Karate Chop;;;;;;;;;;;Lutador;100;;Físico;;25;25
+
+Bulk Up;;;;;;;;;;;Lutador;;;Status;;20;20
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Locais Relacionados;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Dewford - Caverna Granite;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Pokemon: Meditite - Nível: 18;;;;;;;;;Nível Inicial;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Tipos: Lutador / Psíquico;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Golpes;;;;;;;;;;;;;Tipos;;Precisão;;;Categoria;;;PP;;Poder;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Arm Thrust;;;;;;;;;;;Lutador;100;;Físico;;20;20
+
+Karate Chop;;;;;;;;;;;Lutador;100;;Físico;;25;25
+
+Bulk Up;;;;;;;;;;;Lutador;;;Status;;20;20
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Locais Relacionados;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Dewford - Caverna Granite;;
+
+Dewford - Ginásio de Dewford;;;
+FastReport - Unregistered version (only 5 pages);;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;DETALHAMENTO DAS EQUIPES;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;Líderes, Pokémons, golpes e locais relacionados;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Pokemon: Makuhita - Nível: 19;;;;;;;;;Nível Inicial;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Tipos: Lutador;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Golpes;;;;;;;;;;;;Tipos;;;Precisão;;;Categoria;;;PP;;Poder;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Arm Thrust;;;;;;;;;;Lutador;;100;;Físico;;20;20
+
+Karate Chop;;;;;;;;;;Lutador;;100;;Físico;;25;25
+
+Bulk Up;;;;;;;;;;Lutador;;;;Status;;20;20
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Locais Relacionados;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Dewford - Caverna Granite;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Pokemon: Hariyama - Nível: 21;;;;;;;;Nível Intermediário;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Tipos: Lutador;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Golpes;;;;;;;;;;;;Tipos;;;Precisão;;;Categoria;;;PP;;Poder;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Arm Thrust;;;;;;;;;;Lutador;;100;;Físico;;20;20
+
+Karate Chop;;;;;;;;;;Lutador;;100;;Físico;;25;25
+
+Bulk Up;;;;;;;;;;Lutador;;;;Status;;20;20
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;Locais Relacionados;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Dewford - Caverna Granite;;
+
+Dewford - Ginásio de Dewford;;;

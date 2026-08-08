@@ -10,7 +10,8 @@ uses
   FireDAC.Phys.SQLiteWrapper.Stat, FireDAC.Stan.Param, FireDAC.DatS,
   FireDAC.DApt.Intf, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
   FireDAC.Comp.Client, frxSmartMemo, frxClass, frxDBSet, frCoreClasses,
-  frxExportBaseDialog, frxExportPDF;
+  frxExportBaseDialog, frxExportPDF, frxExportCSV,
+  frxExportBaseImageSettingsDialog, frxExportXLS;
 
 type
   TDmConn = class(TDataModule)
@@ -41,6 +42,12 @@ type
     frxDBGraficoLideres: TfrxDBDataset;
     frxDBGraficoTipos: TfrxDBDataset;
     frxDBGraficoComparativo: TfrxDBDataset;
+    frxDBGraficosTiposLider: TfrxDBDataset;
+    frxDBResumoLider: TfrxDBDataset;
+    frxDBResumoGolpes: TfrxDBDataset;
+    frxDBResumoLocais: TfrxDBDataset;
+    CSVExport: TfrxCSVExport;
+    XLSExport: TfrxXLSExport;
     procedure DataModuleCreate(Sender: TObject);
     procedure FDQLideresBeforeOpen(DataSet: TDataSet);
     procedure FDQLideresAfterOpen(DataSet: TDataSet);
@@ -53,6 +60,8 @@ type
     function GetRelatorio(const ACodigo: string; ARelatorio: TfrxReport): Boolean;
     procedure ShowReport(ADesignMode: Boolean = False);
     procedure GerarPDF;
+    procedure GerarCSV;
+    procedure GerarXLS;
   end;
 
 var
@@ -189,7 +198,7 @@ end;
 procedure TDmConn.ShowReport(ADesignMode: Boolean = False);
 begin
   //if not DmConn.GetRelatorio('CLIENTES_POR_EMPRESA', DmConn.Report) then
-  Report.LoadFromFile('C:\Projects\SrPolezi\Formacao-Delphi-Embarcadero-2026\FastsReports\Reports\Aula_02\Dashboard_Pokemon_Subdatail.fr3');
+  Report.LoadFromFile('C:\Projects\SrPolezi\Formacao-Delphi-Embarcadero-2026\FastsReports\Reports\Aula_02\Dashboard_Pokemon_Subdatail_Dashboard.fr3');
 
   //Report.Variables['TITULO_VINDO_DELPHI'] := QuotedStr('MEU TITULO é TAL'); //Precisar ter variavel dentro do relatorio;
 
@@ -232,16 +241,52 @@ begin
   FDQGraficoComparativo.Open;
 end;
 
+procedure TDmConn.GerarCSV;
+begin
+  var CaminhoRelatorio: string := ExpandFileName(
+    ExtractFilePath(ParamStr(0)) +
+    '..\..\Reports\Aula_02\ExportaCSV.fr3'
+  );
+
+  var CaminhoCSV := ExpandFileName(
+    ExtractFilePath(ParamStr(0)) +
+    '..\..\Reports\Aula_02\ExportaCSV.csv'
+  );
+
+  if not FileExists(CaminhoRelatorio) then
+    raise Exception.CreateFmt(
+      'O relatório não foi encontrado:%s%s',
+      [sLineBreak, CaminhoRelatorio]
+    );
+
+  if not DirectoryExists(ExtractFilePath(CaminhoCSV)) then
+    ForceDirectories(ExtractFilePath(CaminhoCSV));
+
+  FDQLideres.Close;
+  FDQLideres.Open;
+
+  Report.LoadFromFile(CaminhoRelatorio);
+
+  CSVExport.FileName       := CaminhoCSV;
+  CSVExport.ShowDialog     := False;
+  CSVExport.OpenAfterExport:= False;
+
+  if not Report.PrepareReport(True) then
+    raise Exception.Create('Não foi possível preparar o relatório para exportação.');
+
+  Report.Export(CSVExport);
+end;
+
 procedure TDmConn.GerarPDF;
 begin
   var CaminhoRelatorio: string := ExpandFileName(
     ExtractFilePath(ParamStr(0)) +
-    '..\..\Reports\Aula_02\Dashboard_Pokemon_Subdatail.fr3'
+    '..\..\Reports\Aula_02\Dashboard_Pokemon_Subdatail_Dashboard.fr3'
   );
 
   var CaminhoPDF := ExpandFileName(
     ExtractFilePath(ParamStr(0)) +
-    '..\..\Reports\Aula_02\Dashboard_Pokemon_Subdatail.pdf'
+    '..\..\Reports\Aula_02\Dashboard_Pokemon_Subdatail_Dashboard.pdf'
   );
 
   if not FileExists(CaminhoRelatorio) then
@@ -266,6 +311,43 @@ begin
     raise Exception.Create('Não foi possível preparar o relatório para exportação.');
 
   Report.Export(PDFExport);
+end;
+
+procedure TDmConn.GerarXLS;
+begin
+  //Precisaa do Excel...
+  var CaminhoRelatorio: string := ExpandFileName(
+    ExtractFilePath(ParamStr(0)) +
+    '..\..\Reports\Aula_02\Dashboard_Pokemon_Subdatail_Dashboard.fr3'
+  );
+
+  var CaminhoXLS := ExpandFileName(
+    ExtractFilePath(ParamStr(0)) +
+    '..\..\Reports\Aula_02\Dashboard_Pokemon_Subdatail_Dashboard.xls'
+  );
+
+  if not FileExists(CaminhoRelatorio) then
+    raise Exception.CreateFmt(
+      'O relatório não foi encontrado:%s%s',
+      [sLineBreak, CaminhoRelatorio]
+    );
+
+  if not DirectoryExists(ExtractFilePath(CaminhoXLS)) then
+    ForceDirectories(ExtractFilePath(CaminhoXLS));
+
+  FDQLideres.Close;
+  FDQLideres.Open;
+
+  Report.LoadFromFile(CaminhoRelatorio);
+
+  XLSExport.FileName       := CaminhoXLS;
+  XLSExport.ShowDialog     := False;
+  XLSExport.OpenAfterExport:= False;
+
+  if not Report.PrepareReport(True) then
+    raise Exception.Create('Não foi possível preparar o relatório para exportação.');
+
+  Report.Export(XLSExport);
 end;
 
 end.

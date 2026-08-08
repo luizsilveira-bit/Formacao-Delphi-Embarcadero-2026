@@ -44,11 +44,10 @@ object DmConn: TDmConn
     PreviewOptions.Zoom = 1.000000000000000000
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
-    ReportOptions.CreateDate = 46242.408066956000000000
-    ReportOptions.LastChange = 46242.479393020800000000
+    ReportOptions.CreateDate = 46242.740616944400000000
+    ReportOptions.LastChange = 46242.741543009260000000
     ScriptLanguage = 'PascalScript'
     StoreInDFM = False
-    OnStartReport = 'ReportOnStartReport'
     Left = 512
     Top = 8
   end
@@ -185,7 +184,7 @@ object DmConn: TDmConn
         Name = 'ID_POKEMON'
         DataType = ftInteger
         ParamType = ptInput
-        Value = 32
+        Value = 29
       end>
   end
   object FDQLocais: TFDQuery
@@ -227,7 +226,7 @@ object DmConn: TDmConn
         Name = 'ID_POKEMON'
         DataType = ftInteger
         ParamType = ptInput
-        Value = 32
+        Value = 29
       end>
   end
   object FDQResumoGeral: TFDQuery
@@ -260,7 +259,7 @@ object DmConn: TDmConn
       'ORDER BY'
       '    QUANTIDADE DESC,'
       '    LIDER')
-    Left = 288
+    Left = 232
     Top = 344
   end
   object FDQGraficoTipos: TFDQuery
@@ -291,13 +290,16 @@ object DmConn: TDmConn
       'FROM VW_GRAFICO_COMPARATIVO'
       'ORDER BY'
       '    ORDEM_LIGA')
-    Left = 360
+    Left = 336
     Top = 344
   end
   object FDQGraficoTiposLider: TFDQuery
+    Active = True
     MasterSource = dsLideres
     MasterFields = 'ID_LIDER'
     Connection = FdConn
+    FetchOptions.AssignedValues = [evCache]
+    FetchOptions.Cache = [fiBlobs, fiMeta]
     SQL.Strings = (
       'SELECT'
       '    P.ID_LIDER,'
@@ -320,13 +322,16 @@ object DmConn: TDmConn
         Name = 'ID_LIDER'
         DataType = ftInteger
         ParamType = ptInput
-        Value = 1
+        Value = 8
       end>
   end
   object FDQResumoLider: TFDQuery
+    Active = True
     MasterSource = dsLideres
     MasterFields = 'ID_LIDER'
     Connection = FdConn
+    FetchOptions.AssignedValues = [evCache]
+    FetchOptions.Cache = [fiBlobs, fiMeta]
     SQL.Strings = (
       'SELECT'
       '    L.ID_LIDER,'
@@ -370,13 +375,16 @@ object DmConn: TDmConn
         Name = 'ID_LIDER'
         DataType = ftInteger
         ParamType = ptInput
-        Value = 1
+        Value = 8
       end>
   end
   object FDQResumoGolpes: TFDQuery
+    Active = True
     MasterSource = dsPokemons
     MasterFields = 'ID_POKEMON'
     Connection = FdConn
+    FetchOptions.AssignedValues = [evCache]
+    FetchOptions.Cache = [fiBlobs, fiMeta]
     SQL.Strings = (
       'SELECT'
       '    P.ID_POKEMON,'
@@ -421,7 +429,7 @@ object DmConn: TDmConn
         Name = 'ID_POKEMON'
         DataType = ftInteger
         ParamType = ptInput
-        Value = 1
+        Value = 29
       end>
   end
   object FDQResumoLocais: TFDQuery
@@ -472,7 +480,7 @@ object DmConn: TDmConn
         Name = 'ID_POKEMON'
         DataType = ftInteger
         ParamType = ptInput
-        Value = 1
+        Value = 32
       end>
   end
   object frxDBLideres: TfrxDBDataset
@@ -782,5 +790,180 @@ object DmConn: TDmConn
       item
         FieldName = 'MAIOR_NIVEL'
       end>
+  end
+  object frxDBGraficosTiposLider: TfrxDBDataset
+    UserName = 'GraficosTiposLider'
+    CloseDataSource = False
+    DataSet = FDQGraficoTiposLider
+    BCDToCurrency = False
+    DataSetOptions = []
+    Left = 432
+    Top = 320
+    FieldDefs = <
+      item
+        FieldName = 'ID_LIDER'
+      end
+      item
+        FieldName = 'TIPO'
+        FieldType = fftString
+        Size = 50
+      end
+      item
+        FieldName = 'QUANTIDADE'
+      end
+      item
+        FieldName = 'MEDIA_NIVEL'
+      end
+      item
+        FieldName = 'MAIOR_NIVEL'
+      end>
+  end
+  object frxDBResumoLider: TfrxDBDataset
+    UserName = 'ResumoLider'
+    CloseDataSource = False
+    DataSet = FDQResumoLider
+    BCDToCurrency = False
+    DataSetOptions = []
+    Left = 496
+    Top = 320
+    FieldDefs = <
+      item
+        FieldName = 'ID_LIDER'
+      end
+      item
+        FieldName = 'LIDER'
+        FieldType = fftString
+        Size = 100
+      end
+      item
+        FieldName = 'CIDADE'
+        FieldType = fftString
+        Size = 100
+      end
+      item
+        FieldName = 'GINASIO'
+        FieldType = fftString
+        Size = 150
+      end
+      item
+        FieldName = 'INSIGNIA'
+        FieldType = fftString
+        Size = 100
+      end
+      item
+        FieldName = 'ESPECIALIDADE'
+        FieldType = fftString
+        Size = 50
+      end
+      item
+        FieldName = 'QTDE_POKEMONS'
+      end
+      item
+        FieldName = 'MEDIA_NIVEL'
+      end
+      item
+        FieldName = 'MAIOR_NIVEL'
+      end
+      item
+        FieldName = 'MENOR_NIVEL'
+      end
+      item
+        FieldName = 'POKEMON_PRINCIPAL'
+        FieldType = fftString
+        Size = 100
+      end>
+  end
+  object frxDBResumoGolpes: TfrxDBDataset
+    UserName = 'ResumoGolpes'
+    CloseDataSource = False
+    DataSet = FDQResumoGolpes
+    BCDToCurrency = False
+    DataSetOptions = []
+    Left = 544
+    Top = 320
+    FieldDefs = <
+      item
+        FieldName = 'ID_POKEMON'
+      end
+      item
+        FieldName = 'POKEMON'
+        FieldType = fftString
+        Size = 100
+      end
+      item
+        FieldName = 'QTDE_GOLPES'
+      end
+      item
+        FieldName = 'PODER_MEDIO'
+      end
+      item
+        FieldName = 'MAIOR_PODER'
+      end
+      item
+        FieldName = 'GOLPE_MAIS_FORTE'
+        FieldType = fftString
+        Size = 100
+      end>
+  end
+  object frxDBResumoLocais: TfrxDBDataset
+    UserName = 'ResumoLocais'
+    CloseDataSource = False
+    DataSet = FDQResumoLocais
+    BCDToCurrency = False
+    DataSetOptions = []
+    Left = 592
+    Top = 320
+    FieldDefs = <
+      item
+        FieldName = 'ID_POKEMON'
+      end
+      item
+        FieldName = 'POKEMON'
+        FieldType = fftString
+        Size = 100
+      end
+      item
+        FieldName = 'QTDE_GOLPES'
+      end
+      item
+        FieldName = 'PODER_MEDIO'
+      end
+      item
+        FieldName = 'MAIOR_PODER'
+      end
+      item
+        FieldName = 'GOLPE_MAIS_FORTE'
+        FieldType = fftString
+        Size = 100
+      end>
+  end
+  object CSVExport: TfrxCSVExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    DataOnly = False
+    Separator = ';'
+    OEMCodepage = False
+    UTF8 = False
+    OpenAfterExport = False
+    NoSysSymbols = True
+    ForcedQuotes = False
+    Left = 256
+    Top = 64
+  end
+  object XLSExport: TfrxXLSExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    DataOnly = False
+    ExportEMF = True
+    AsText = False
+    Background = True
+    FastExport = True
+    PageBreaks = True
+    EmptyLines = True
+    SuppressPageHeadersFooters = False
+    Left = 320
+    Top = 72
   end
 end
