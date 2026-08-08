@@ -18,13 +18,32 @@ type
     FDPhysSQLiteDriverLink: TFDPhysSQLiteDriverLink;
     FDQLideres: TFDQuery;
     Report: TfrxReport;
-    frxDBEmpresa: TfrxDBDataset;
     FDQPokemons: TFDQuery;
-    frxDBClientes: TfrxDBDataset;
-    DataSource: TDataSource;
+    dsLideres: TDataSource;
     FDQRelatorios: TFDQuery;
     PDFExport: TfrxPDFExport;
+    dsPokemons: TDataSource;
+    FDQGolpes: TFDQuery;
+    FDQLocais: TFDQuery;
+    FDQResumoGeral: TFDQuery;
+    FDQGraficoLideres: TFDQuery;
+    FDQGraficoTipos: TFDQuery;
+    FDQGraficoComparativo: TFDQuery;
+    FDQGraficoTiposLider: TFDQuery;
+    FDQResumoLider: TFDQuery;
+    FDQResumoGolpes: TFDQuery;
+    FDQResumoLocais: TFDQuery;
+    frxDBLideres: TfrxDBDataset;
+    frxDBPokemons: TfrxDBDataset;
+    frxDBGolpes: TfrxDBDataset;
+    frxDBLocais: TfrxDBDataset;
+    frxDBResumoGeral: TfrxDBDataset;
+    frxDBGraficoLideres: TfrxDBDataset;
+    frxDBGraficoTipos: TfrxDBDataset;
+    frxDBGraficoComparativo: TfrxDBDataset;
     procedure DataModuleCreate(Sender: TObject);
+    procedure FDQLideresBeforeOpen(DataSet: TDataSet);
+    procedure FDQLideresAfterOpen(DataSet: TDataSet);
   private
     { Private declarations }
   public
@@ -169,12 +188,45 @@ begin
   //if not DmConn.GetRelatorio('CLIENTES_POR_EMPRESA', DmConn.Report) then
   //Report.LoadFromFile('C:\Projects\SrPolezi\Formacao-Delphi-Embarcadero-2026\FastsReports\Reports\Aula_01\Example.fr3');
 
-  Report.Variables['TITULO_VINDO_DELPHI'] := QuotedStr('MEU TITULO é TAL'); //Precisar ter variavel dentro do relatorio;
+  //Report.Variables['TITULO_VINDO_DELPHI'] := QuotedStr('MEU TITULO é TAL'); //Precisar ter variavel dentro do relatorio;
 
   if ADesignMode then
     Report.DesignReport
   else
     Report.ShowReport;
+end;
+
+procedure TDmConn.FDQLideresAfterOpen(DataSet: TDataSet);
+begin
+  FDQPokemons.Open;
+  FDQResumoLider.Open;
+  FDQGraficoTiposLider.Open;
+
+  FDQGolpes.Open;
+  FDQLocais.Open;
+  FDQResumoGolpes.Open;
+  FDQResumoLocais.Open;
+end;
+
+procedure TDmConn.FDQLideresBeforeOpen(DataSet: TDataSet);
+begin
+  FDQResumoLocais.Close;
+  FDQResumoGolpes.Close;
+  FDQLocais.Close;
+  FDQGolpes.Close;
+  FDQPokemons.Close;
+  FDQResumoLider.Close;
+  FDQGraficoTiposLider.Close;
+
+  FDQGraficoComparativo.Close;
+  FDQGraficoTipos.Close;
+  FDQGraficoLideres.Close;
+  FDQResumoGeral.Close;
+
+  FDQResumoGeral.Open;
+  FDQGraficoLideres.Open;
+  FDQGraficoTipos.Open;
+  FDQGraficoComparativo.Open;
 end;
 
 procedure TDmConn.GerarPDF;

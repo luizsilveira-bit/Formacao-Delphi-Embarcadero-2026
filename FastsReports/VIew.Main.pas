@@ -36,9 +36,7 @@ uses
 procedure TFrMain.btnEmpresasClick(Sender: TObject);
 begin
   DmConn.FDQLideres.Close;
-  DmConn.DataSource.DataSet := DmConn.FDQLideres;
-
-  Dados.DataSource := DmConn.DataSource;
+  Dados.DataSource := DmConn.dsLideres;
   DmConn.FDQLideres.Open;
 end;
 
