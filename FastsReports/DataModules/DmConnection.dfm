@@ -18,8 +18,8 @@ object DmConn: TDmConn
     Top = 8
   end
   object FDQLideres: TFDQuery
+    Active = True
     BeforeOpen = FDQLideresBeforeOpen
-    AfterOpen = FDQLideresAfterOpen
     Connection = FdConn
     SQL.Strings = (
       'SELECT'
@@ -45,617 +45,19 @@ object DmConn: TDmConn
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 46242.408066956000000000
-    ReportOptions.LastChange = 46242.408066956000000000
+    ReportOptions.LastChange = 46242.479393020830000000
     ScriptLanguage = 'PascalScript'
-    ScriptText.Strings = (
-      ''
-      'begin'
-      ''
-      'end.')
+    StoreInDFM = False
     Left = 512
     Top = 8
-    Datasets = <
-      item
-        DataSet = frxDBLideres
-        DataSetName = 'Lideres'
-      end
-      item
-        DataSet = frxDBPokemons
-        DataSetName = 'Pokemons'
-      end
-      item
-        DataSet = frxDBGolpes
-        DataSetName = 'Golpes'
-      end
-      item
-        DataSet = frxDBLocais
-        DataSetName = 'Locais'
-      end
-      item
-        DataSet = frxDBResumoGeral
-        DataSetName = 'ResumoGeral'
-      end
-      item
-        DataSet = frxDBGraficoLideres
-        DataSetName = 'GraficoLideres'
-      end
-      item
-        DataSet = frxDBGraficoTipos
-        DataSetName = 'GraficoTipos'
-      end
-      item
-        DataSet = frxDBGraficoComparativo
-        DataSetName = 'GraficoComparativo'
-      end>
-    Variables = <>
-    Style = <>
-    Watermarks = <>
-    object Data: TfrxDataPage
-      Height = 1000.000000000000000000
-      Width = 1000.000000000000000000
-    end
-    object pgDashboard: TfrxReportPage
-      Orientation = poLandscape
-      PaperWidth = 297.000000000000000000
-      PaperHeight = 210.000000000000000000
-      PaperSize = 9
-      LeftMargin = 10.000000000000000000
-      RightMargin = 10.000000000000000000
-      TopMargin = 10.000000000000000000
-      BottomMargin = 10.000000000000000000
-      Frame.Color = 15000804
-      Frame.Typ = []
-      MirrorMode = []
-      object ReportTitleDashboard: TfrxReportTitle
-        FillType = ftBrush
-        FillGap.Top = 0
-        FillGap.Left = 0
-        FillGap.Bottom = 0
-        FillGap.Right = 0
-        Frame.Typ = []
-        Height = 83.149660000000000000
-        Top = 18.897650000000000000
-        Width = 1046.929810000000000000
-        object Shape1: TfrxShapeView
-          AllowVectorExport = True
-          Left = 7.559058160000000000
-          Top = 3.779528240000000000
-          Width = 1031.811698360000000000
-          Height = 75.590601670000000000
-          Fill.BackColor = 15790320
-          Frame.Color = 14671839
-          Frame.Typ = []
-          Shape = skRoundRectangle
-        end
-        object Memo8: TfrxMemoView
-          IndexTag = 1
-          AllowVectorExport = True
-          Left = 258.897806980000000000
-          Top = 11.338590000000000000
-          Width = 529.134200730000000000
-          Height = 30.236240000000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          DataSet = frxDBResumoGeral
-          DataSetName = 'ResumoGeral'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -27
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            'DOSS'#205#202' ANAL'#205'TICO DA LIGA POK'#201'MON')
-          ParentFont = False
-        end
-        object Memo9: TfrxMemoView
-          IndexTag = 1
-          AllowVectorExport = True
-          Left = 258.897806980000000000
-          Top = 45.354360000000000000
-          Width = 529.134200730000000000
-          Height = 22.677180000000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          DataSet = frxDBResumoGeral
-          DataSetName = 'ResumoGeral'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -19
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            'An'#225'lise geral dos l'#237'deres, equipes, tipos e n'#237'veis')
-          ParentFont = False
-        end
-      end
-      object MasterDataDashboard: TfrxMasterData
-        FillType = ftBrush
-        FillGap.Top = 0
-        FillGap.Left = 0
-        FillGap.Bottom = 0
-        FillGap.Right = 0
-        Frame.Typ = []
-        Height = 472.441250000000000000
-        Top = 162.519790000000000000
-        Width = 1046.929810000000000000
-        DataSet = frxDBResumoGeral
-        DataSetName = 'ResumoGeral'
-        RowCount = 0
-        object Shape2: TfrxShapeView
-          AllowVectorExport = True
-          Left = 94.488247350000000000
-          Top = 7.559059750000000000
-          Width = 113.385908360000000000
-          Height = 113.385894040000000000
-          Frame.Color = clSilver
-          Frame.Typ = []
-          Shape = skRoundRectangle
-        end
-        object Shape3: TfrxShapeView
-          AllowVectorExport = True
-          Left = 283.464750000000000000
-          Top = 7.559060000000000000
-          Width = 113.385908360000000000
-          Height = 113.385894040000000000
-          Frame.Color = clSilver
-          Frame.Typ = []
-          Shape = skRoundRectangle
-        end
-        object Shape4: TfrxShapeView
-          AllowVectorExport = True
-          Left = 472.441250000000000000
-          Top = 7.559060000000000000
-          Width = 113.385908360000000000
-          Height = 113.385894040000000000
-          Frame.Color = clSilver
-          Frame.Typ = []
-          Shape = skRoundRectangle
-        end
-        object Shape5: TfrxShapeView
-          AllowVectorExport = True
-          Left = 661.417750000000000000
-          Top = 7.559060000000000000
-          Width = 113.385908360000000000
-          Height = 113.385894040000000000
-          Frame.Color = clSilver
-          Frame.Typ = []
-          Shape = skRoundRectangle
-        end
-        object Shape6: TfrxShapeView
-          AllowVectorExport = True
-          Left = 850.394250000000000000
-          Top = 7.559060000000000000
-          Width = 113.385908360000000000
-          Height = 113.385894040000000000
-          Frame.Color = clSilver
-          Frame.Typ = []
-          Shape = skRoundRectangle
-        end
-        object MemoResumoGeralQTDE_LIDERES: TfrxMemoView
-          IndexTag = 1
-          AllowVectorExport = True
-          Left = 111.496136530000000000
-          Top = 56.692950000000000000
-          Width = 79.370130000000000000
-          Height = 56.692950000000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          DataField = 'QTDE_LIDERES'
-          DataSet = frxDBResumoGeral
-          DataSetName = 'ResumoGeral'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -27
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            '[ResumoGeral."QTDE_LIDERES"]')
-          ParentFont = False
-        end
-        object Memo2: TfrxMemoView
-          IndexTag = 1
-          AllowVectorExport = True
-          Left = 300.472639180000000000
-          Top = 56.692950000000000000
-          Width = 79.370130000000000000
-          Height = 56.692950000000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          DataField = 'QTDE_POKEMONS'
-          DataSet = frxDBResumoGeral
-          DataSetName = 'ResumoGeral'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -27
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            '[ResumoGeral."QTDE_POKEMONS"]')
-          ParentFont = False
-        end
-        object Memo3: TfrxMemoView
-          IndexTag = 1
-          AllowVectorExport = True
-          Left = 489.449139180000000000
-          Top = 56.692950000000000000
-          Width = 79.370130000000000000
-          Height = 56.692950000000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          DataField = 'MEDIA_NIVEL'
-          DataSet = frxDBResumoGeral
-          DataSetName = 'ResumoGeral'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -27
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            '[ResumoGeral."MEDIA_NIVEL"]')
-          ParentFont = False
-        end
-        object Memo4: TfrxMemoView
-          IndexTag = 1
-          AllowVectorExport = True
-          Left = 678.425639180000000000
-          Top = 56.692950000000000000
-          Width = 79.370130000000000000
-          Height = 56.692950000000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          DataField = 'MAIOR_NIVEL'
-          DataSet = frxDBResumoGeral
-          DataSetName = 'ResumoGeral'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -27
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            '[ResumoGeral."MAIOR_NIVEL"]')
-          ParentFont = False
-        end
-        object Memo5: TfrxMemoView
-          IndexTag = 1
-          AllowVectorExport = True
-          Left = 867.402139180000000000
-          Top = 56.692950000000000000
-          Width = 79.370130000000000000
-          Height = 56.692950000000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          DataField = 'MENOR_NIVEL'
-          DataSet = frxDBResumoGeral
-          DataSetName = 'ResumoGeral'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -27
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            '[ResumoGeral."MENOR_NIVEL"]')
-          ParentFont = False
-        end
-        object Chart1: TfrxChartView
-          AllowVectorExport = True
-          Left = 34.015763880000000000
-          Top = 136.063086360000000000
-          Width = 502.677490730000000000
-          Height = 321.260044040000000000
-          HighlightColor = clBlack
-          Frame.Typ = []
-          Chart = {
-            5450463006544368617274054368617274044C656674020003546F7002000557
-            696474680390010648656967687403FA00144261636B57616C6C2E50656E2E56
-            697369626C65081F4C6567656E642E53796D626F6C2E4772616469656E742E45
-            6E64436F6C6F72044466A300194C6567656E642E5469746C652E546578742E53
-            7472696E677301140C0000004DC3A9646961204E6976656C00125469746C652E
-            546578742E537472696E677301141B0000004DC389444941204445204EC38D56
-            454C20504F52204CC38D444552000D4672616D652E56697369626C6508165669
-            657733444F7074696F6E732E526F746174696F6E02000A426576656C4F757465
-            72070662764E6F6E6505436F6C6F720707636C57686974650D44656661756C74
-            43616E766173060E54474449506C757343616E76617311436F6C6F7250616C65
-            747465496E646578020D000F54486F72697A4261725365726965730753657269
-            6573310B4C6567656E642E54657874140C0000004DC3A9646961204E6976656C
-            0B4C6567656E645469746C65140C0000004DC3A9646961204E6976656C1B4261
-            7242727573682E4772616469656E742E446972656374696F6E070B67644C6566
-            7452696768741A42617242727573682E4772616469656E742E456E64436F6C6F
-            72042B406B001942617242727573682E4772616469656E742E56697369626C65
-            090E436F6C6F7245616368506F696E7409074461726B50656E038200114D6172
-            6B732E466F6E742E48656967687402F70D4D61726B732E56697369626C650814
-            4D61726B732E43616C6C6F75742E4C656E67746802040F4D61726B732E447261
-            77457665727902020B4D61726B732E4F6E546F7009055469746C65140C000000
-            4DC3A9646961204E6976656C084261725374796C65070E627352656374477261
-            6469656E740F426172576964746850657263656E740255124772616469656E74
-            2E446972656374696F6E070B67644C6566745269676874114772616469656E74
-            2E456E64436F6C6F72042B406B00104772616469656E742E56697369626C6509
-            084D756C746942617207066D624E6F6E650C5856616C7565732E4E616D650603
-            4261720D5856616C7565732E4F7264657207066C6F4E6F6E650C5956616C7565
-            732E4E616D650601590D5956616C7565732E4F72646572070B6C6F417363656E
-            64696E67000000}
-          ChartElevation = 345
-          SeriesData = <
-            item
-              DataType = dtDBData
-              DataSet = frxDBGraficoLideres
-              DataSetName = 'GraficoLideres'
-              SortOrder = soNone
-              TopN = 0
-              XType = xtText
-              Source1 = 'GraficoLideres."LIDER"'
-              Source2 = 'GraficoLideres."MEDIA_NIVEL"'
-              XSource = 'GraficoLideres."LIDER"'
-              YSource = 'GraficoLideres."MEDIA_NIVEL"'
-            end>
-        end
-        object Chart2: TfrxChartView
-          AllowVectorExport = True
-          Left = 563.149953830000000000
-          Top = 136.063075340000000000
-          Width = 453.543631250000000000
-          Height = 321.260044040000000000
-          HighlightColor = clBlack
-          Frame.Typ = []
-          Chart = {
-            5450463006544368617274054368617274044C656674020003546F7002000557
-            696474680390010648656967687403FA00144261636B57616C6C2E50656E2E56
-            697369626C6508194C6567656E642E5469746C652E546578742E537472696E67
-            730106055469706F7300125469746C652E546578742E537472696E6773011421
-            000000444953545249425549C387C3834F20504F52205449504F205052494DC3
-            8152494F000B4178697356697369626C65080D4672616D652E56697369626C65
-            08175669657733444F7074696F6E732E456C65766174696F6E033B0118566965
-            7733444F7074696F6E732E4F7274686F676F6E616C08195669657733444F7074
-            696F6E732E50657273706563746976650200165669657733444F7074696F6E73
-            2E526F746174696F6E0368010B56696577334457616C6C73080A426576656C4F
-            75746572070662764E6F6E6505436F6C6F720707636C57686974650D44656661
-            756C7443616E766173060E54474449506C757343616E76617311436F6C6F7250
-            616C65747465496E646578020D000A5450696553657269657307536572696573
-            31114D61726B732E466F6E742E48656967687402F70D4D61726B732E56697369
-            626C6508144D61726B732E43616C6C6F75742E4C656E6774680200114D61726B
-            732E5461696C2E4D617267696E02020D5856616C7565732E4F72646572070B6C
-            6F417363656E64696E670C5956616C7565732E4E616D6506035069650D595661
-            6C7565732E4F7264657207066C6F4E6F6E651A4672616D652E496E6E65724272
-            7573682E4261636B436F6C6F720705636C526564224672616D652E496E6E6572
-            42727573682E4772616469656E742E456E64436F6C6F720706636C4772617922
-            4672616D652E496E6E657242727573682E4772616469656E742E4D6964436F6C
-            6F720707636C5768697465244672616D652E496E6E657242727573682E477261
-            6469656E742E5374617274436F6C6F720440404000214672616D652E496E6E65
-            7242727573682E4772616469656E742E56697369626C65091B4672616D652E4D
-            6964646C6542727573682E4261636B436F6C6F720708636C59656C6C6F772346
-            72616D652E4D6964646C6542727573682E4772616469656E742E456E64436F6C
-            6F720482828200234672616D652E4D6964646C6542727573682E477261646965
-            6E742E4D6964436F6C6F720707636C5768697465254672616D652E4D6964646C
-            6542727573682E4772616469656E742E5374617274436F6C6F720706636C4772
-            6179224672616D652E4D6964646C6542727573682E4772616469656E742E5669
-            7369626C65091A4672616D652E4F7574657242727573682E4261636B436F6C6F
-            720707636C477265656E224672616D652E4F7574657242727573682E47726164
-            69656E742E456E64436F6C6F720440404000224672616D652E4F757465724272
-            7573682E4772616469656E742E4D6964436F6C6F720707636C57686974652446
-            72616D652E4F7574657242727573682E4772616469656E742E5374617274436F
-            6C6F720708636C53696C766572214672616D652E4F7574657242727573682E47
-            72616469656E742E56697369626C65090B4672616D652E57696474680204194F
-            74686572536C6963652E4C6567656E642E56697369626C6508000000}
-          ChartElevation = 315
-          SeriesData = <
-            item
-              DataType = dtDBData
-              DataSet = frxDBGraficoTipos
-              DataSetName = 'GraficoTipos'
-              SortOrder = soNone
-              TopN = 0
-              XType = xtText
-              Source1 = 'GraficoTipos."TIPO"'
-              Source2 = 'GraficoTipos."QUANTIDADE"'
-              XSource = 'GraficoTipos."TIPO"'
-              YSource = 'GraficoTipos."QUANTIDADE"'
-            end>
-        end
-        object Memo10: TfrxMemoView
-          IndexTag = 1
-          AllowVectorExport = True
-          Left = 107.716606160000000000
-          Top = 15.118120000000000000
-          Width = 86.929190730000000000
-          Height = 22.677180000000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          DataSet = frxDBResumoGeral
-          DataSetName = 'ResumoGeral'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            'L'#237'deres')
-          ParentFont = False
-        end
-        object Memo11: TfrxMemoView
-          IndexTag = 1
-          AllowVectorExport = True
-          Left = 296.693108810000000000
-          Top = 15.118120000000000000
-          Width = 86.929190730000000000
-          Height = 22.677180000000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          DataSet = frxDBResumoGeral
-          DataSetName = 'ResumoGeral'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            'Pokemons')
-          ParentFont = False
-        end
-        object Memo12: TfrxMemoView
-          IndexTag = 1
-          AllowVectorExport = True
-          Left = 483.779843815000000000
-          Top = 15.118120000000000000
-          Width = 90.708720730000000000
-          Height = 22.677180000000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          DataSet = frxDBResumoGeral
-          DataSetName = 'ResumoGeral'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            'M'#233'dia N'#237'vel')
-          ParentFont = False
-        end
-        object Memo13: TfrxMemoView
-          IndexTag = 1
-          AllowVectorExport = True
-          Left = 668.976813810000000000
-          Top = 15.118120000000000000
-          Width = 98.267780730000000000
-          Height = 22.677180000000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          DataSet = frxDBResumoGeral
-          DataSetName = 'ResumoGeral'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            'Maior N'#237'vel')
-          ParentFont = False
-        end
-        object Memo14: TfrxMemoView
-          IndexTag = 1
-          AllowVectorExport = True
-          Left = 859.843078815000000000
-          Top = 15.118120000000000000
-          Width = 94.488250730000000000
-          Height = 22.677180000000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          DataSet = frxDBResumoGeral
-          DataSetName = 'ResumoGeral'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -16
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            'Menor N'#237'vel')
-          ParentFont = False
-        end
-      end
-      object PageFooterDashboard: TfrxPageFooter
-        FillType = ftBrush
-        FillGap.Top = 0
-        FillGap.Left = 0
-        FillGap.Bottom = 0
-        FillGap.Right = 0
-        Frame.Typ = []
-        Height = 22.677180000000000000
-        Top = 695.433520000000000000
-        Width = 1046.929810000000000000
-        object Shape7: TfrxShapeView
-          AllowVectorExport = True
-          Left = 7.559058160000000000
-          Top = -3.779530000000000000
-          Width = 1031.811698360000000000
-          Height = 22.677181670000000000
-          Fill.BackColor = 15790320
-          Frame.Color = 14671839
-          Frame.Typ = []
-          Shape = skRoundRectangle
-        end
-        object Memo1: TfrxMemoView
-          AllowVectorExport = True
-          Left = 959.780150000000000000
-          Width = 75.590600000000000000
-          Height = 18.897650000000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          AutoWidth = True
-          Frame.Typ = []
-          HAlign = haRight
-          Memo.UTF8W = (
-            'P'#225'gina [Page#] de [TotalPages#]')
-        end
-        object Memo6: TfrxMemoView
-          AllowVectorExport = True
-          Left = 385.512060000000000000
-          Width = 275.905690000000000000
-          Height = 18.897650000000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          HAlign = haCenter
-          Memo.UTF8W = (
-            'Forma'#231#227'o Embarcadero - Fasts Reports')
-          ParentFont = False
-        end
-        object Memo7: TfrxMemoView
-          AllowVectorExport = True
-          Left = 10.559060000000000000
-          Width = 75.590600000000000000
-          Height = 18.897650000000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = []
-          Frame.Typ = []
-          Memo.UTF8W = (
-            'Emitido em [Date] '#224's [Time]')
-          ParentFont = False
-          Formats = <
-            item
-            end
-            item
-            end>
-        end
-      end
-    end
   end
   object FDQPokemons: TFDQuery
+    Active = True
     MasterSource = dsLideres
     MasterFields = 'ID_LIDER'
     Connection = FdConn
+    FetchOptions.AssignedValues = [evCache]
+    FetchOptions.Cache = [fiBlobs, fiMeta]
     SQL.Strings = (
       'SELECT'
       '    P.ID_POKEMON,'
@@ -693,7 +95,7 @@ object DmConn: TDmConn
         Name = 'ID_LIDER'
         DataType = ftInteger
         ParamType = ptInput
-        Value = 1
+        Value = 8
       end>
   end
   object dsLideres: TDataSource
@@ -740,9 +142,12 @@ object DmConn: TDmConn
     Top = 152
   end
   object FDQGolpes: TFDQuery
+    Active = True
     MasterSource = dsPokemons
     MasterFields = 'ID_POKEMON'
     Connection = FdConn
+    FetchOptions.AssignedValues = [evCache]
+    FetchOptions.Cache = [fiBlobs, fiMeta]
     SQL.Strings = (
       'SELECT'
       '    G.ID_GOLPE,'
@@ -779,13 +184,16 @@ object DmConn: TDmConn
         Name = 'ID_POKEMON'
         DataType = ftInteger
         ParamType = ptInput
-        Value = 1
+        Value = 32
       end>
   end
   object FDQLocais: TFDQuery
+    Active = True
     MasterSource = dsPokemons
     MasterFields = 'ID_POKEMON'
     Connection = FdConn
+    FetchOptions.AssignedValues = [evCache]
+    FetchOptions.Cache = [fiBlobs, fiMeta]
     SQL.Strings = (
       'SELECT'
       '    LP.ID_LOCAL,'
@@ -818,7 +226,7 @@ object DmConn: TDmConn
         Name = 'ID_POKEMON'
         DataType = ftInteger
         ParamType = ptInput
-        Value = 1
+        Value = 32
       end>
   end
   object FDQResumoGeral: TFDQuery

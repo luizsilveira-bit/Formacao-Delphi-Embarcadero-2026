@@ -186,7 +186,7 @@ end;
 procedure TDmConn.ShowReport(ADesignMode: Boolean = False);
 begin
   //if not DmConn.GetRelatorio('CLIENTES_POR_EMPRESA', DmConn.Report) then
-  //Report.LoadFromFile('C:\Projects\SrPolezi\Formacao-Delphi-Embarcadero-2026\FastsReports\Reports\Aula_01\Example.fr3');
+  Report.LoadFromFile('C:\Projects\SrPolezi\Formacao-Delphi-Embarcadero-2026\FastsReports\Reports\Aula_02\Dashboard_Pokemon_Subdatail.fr3');
 
   //Report.Variables['TITULO_VINDO_DELPHI'] := QuotedStr('MEU TITULO é TAL'); //Precisar ter variavel dentro do relatorio;
 
