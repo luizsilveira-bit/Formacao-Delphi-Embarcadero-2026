@@ -236,12 +236,12 @@ procedure TDmConn.GerarPDF;
 begin
   var CaminhoRelatorio: string := ExpandFileName(
     ExtractFilePath(ParamStr(0)) +
-    '..\..\Reports\Aula_01\EnderecosClientesEmpresas_2.fr3'
+    '..\..\Reports\Aula_02\Dashboard_Pokemon_Subdatail.fr3'
   );
 
   var CaminhoPDF := ExpandFileName(
     ExtractFilePath(ParamStr(0)) +
-    '..\..\Reports\Aula_01\EnderecosClientesEmpresas.pdf'
+    '..\..\Reports\Aula_02\Dashboard_Pokemon_Subdatail.pdf'
   );
 
   if not FileExists(CaminhoRelatorio) then
